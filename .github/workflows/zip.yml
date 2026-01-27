@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  VERSION: 0.2.0
+  VERSION: 0.2.1
   MINECRAFT_VERSION: 1.21.11
   NOTES: |
     - Added SMP
