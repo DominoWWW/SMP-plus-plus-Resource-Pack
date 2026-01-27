@@ -45,6 +45,7 @@ jobs:
           dest: Hub.zip
 
       - name: ⬆️ Uploading SMP Release
+        id: upload-SMP-release
         uses: actions/upload-release-asset@v1
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,6 +56,7 @@ jobs:
             asset_content_type: application/zip
 
       - name: ⬆️ Uploading Hub Release
+        id: upload-Hub-release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
