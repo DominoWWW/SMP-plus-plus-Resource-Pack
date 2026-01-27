@@ -8,9 +8,7 @@ env:
   VERSION: 0.2.1
   MINECRAFT_VERSION: 1.21.11
   NOTES: |
-    - Added SMP
-    - Renamed zip files
-    - Added custom model data example
+    - 
 
 jobs:
   zip-and-publish:
