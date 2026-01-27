@@ -1,0 +1,28 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "vin_doe:marshmallow",
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:has_component",
+                    "component": "minecraft:custom_model_data",
+                    "on_true": {
+                        "type": "minecraft:model",
+                        "model": "vin_doe:item/marshmallow"
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/golden_carrot"
+                    }
+                }
+            }
+        ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/golden_carrot"
+            }
+    }
+}
