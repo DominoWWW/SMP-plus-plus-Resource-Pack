@@ -47,7 +47,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: /Hub.zip
-          asset_name: Hub++.zip
+          asset_name: Hub.zip
           asset_content_type: application/zip
 
       - name: ⬆️ Uploading SMP Release
@@ -57,7 +57,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: /SMP.zip
-          asset_name: SMP++.zip
+          asset_name: SMP.zip
           asset_content_type: application/zip
 
       - name: ✅ Publishing release
