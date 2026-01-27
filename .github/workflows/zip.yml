@@ -15,7 +15,11 @@ env:
 jobs:
   zip-and-publish:
     runs-on: ubuntu-latest
+    permissions: write-all
+
     steps:
+      - uses: actions/checkout@v4
+
       - name: 🫸Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -26,6 +30,13 @@ jobs:
             release_name: '${{ github.event.repository.name }} v${{ env.VERSION }} ${{ env.MINECRAFT_VERSION }}'
             body: '${{ env.NOTES }}'
 
+      - name: 🤐 Zipping SMP
+        uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1.2
+        with:
+          files: SMP/
+          dest: SMP.zip
+
       - name: 🤐 Zipping Hub
         uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1.2
@@ -33,12 +44,15 @@ jobs:
           files: Hub/
           dest: Hub.zip
 
-      - name: 🤐 Zipping SMP
-        uses: actions/checkout@v2
-      - uses: vimtor/action-zip@v1.2
+      - name: ⬆️ Uploading SMP Release
+        uses: actions/upload-release-asset@v1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: SMP/
-          dest: SMP.zip
+            upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+            asset_path: ./SMP.zip
+            asset_name: SMP.zip
+            asset_content_type: application/zip
 
       - name: ⬆️ Uploading Hub Release
         uses: actions/upload-release-asset@v1
@@ -48,16 +62,6 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./Hub.zip
           asset_name: Hub.zip
-          asset_content_type: application/zip
-
-      - name: ⬆️ Uploading SMP Release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./SMP.zip
-          asset_name: SMP.zip
           asset_content_type: application/zip
 
       - name: ✅ Publishing release
