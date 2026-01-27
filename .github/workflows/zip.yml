@@ -67,6 +67,6 @@ jobs:
           asset_content_type: application/zip
 
       - name: ✅ Publishing release
-        run: gh release edit "${{ github.event.repository.name }} v${{ env.VERSION }} ${{ env.MINECRAFT_VERSION }}" --draft=false
+        run: gh release edit "${{ steps.create_release.outputs.tag_name }}" --draft=false
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
