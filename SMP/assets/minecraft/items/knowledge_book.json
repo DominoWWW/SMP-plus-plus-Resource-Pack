@@ -1,0 +1,28 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "admin:tail",
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:has_component",
+                    "component": "minecraft:custom_model_data",
+                    "on_true": {
+                        "type": "minecraft:model",
+                        "model": "admin:item/tail"
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/knowledge_book"
+                    }
+                }
+            }
+        ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/knowledge_book"
+            }
+    }
+}

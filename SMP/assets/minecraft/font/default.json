@@ -3,8 +3,8 @@
         {
             "type": "bitmap",
             "file": "minecraft:icons/logo.png",
-            "ascent": 12,
-            "height": 23,
+            "ascent": 11,
+            "height": 25,
             "chars": [
                 "\uE100"
             ]
