@@ -2,9 +2,9 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "minecraft:icons/logo.png",
-            "ascent": 11,
-            "height": 25,
+            "file": "minecraft:icons/tab_logo.png",
+            "ascent": 12,
+            "height": 30,
             "chars": [
                 "\uE100"
             ]

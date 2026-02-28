@@ -5,12 +5,11 @@ on:
       - main
 
 env:
-  VERSION: 0.2.2
+  VERSION: 1.0.0
   MINECRAFT_VERSION: 1.21.11
   NOTES: |
-    - Added Now logo, stimp, tails and 9 tails
-    - Updated the README
-    - Updated file structure
+    - Fix logo
+    - Fix custom item model
 
 jobs:
   zip-and-publish:

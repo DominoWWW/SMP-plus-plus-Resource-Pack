@@ -8,7 +8,7 @@
                 "model": {
                     "type": "minecraft:condition",
                     "property": "minecraft:has_component",
-                    "component": "minecraft:custom_model_data",
+                    "component": "minecraft:item_model",
                     "on_true": {
                         "type": "minecraft:model",
                         "model": "vin_doe:item/marshmallow"
