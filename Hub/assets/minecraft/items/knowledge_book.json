@@ -4,25 +4,25 @@
         "property": "minecraft:custom_model_data",
         "cases": [
             {
-                "when": "vin_doe:marshmallow",
+                "when": "admin:tail",
                 "model": {
                     "type": "minecraft:condition",
                     "property": "minecraft:has_component",
-                    "component": "minecraft:item_model",
+                    "component": "minecraft:custom_model_data",
                     "on_true": {
                         "type": "minecraft:model",
-                        "model": "vin_doe:item/marshmallow"
+                        "model": "admin:item/tail"
                     },
                     "on_false": {
                         "type": "minecraft:model",
-                        "model": "minecraft:item/golden_carrot"
+                        "model": "minecraft:item/knowledge_book"
                     }
                 }
             }
         ],
             "fallback": {
                 "type": "minecraft:model",
-                "model": "minecraft:item/golden_carrot"
+                "model": "minecraft:item/knowledge_book"
             }
     }
 }
