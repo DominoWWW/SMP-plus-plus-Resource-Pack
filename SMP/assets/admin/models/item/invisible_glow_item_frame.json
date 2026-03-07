@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "admin:item/invisible_glow_item_frame"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "admin:item/invisible_glow_item_frame"
+  }
 }
