@@ -5,10 +5,10 @@ on:
       - main
 
 env:
-  VERSION: 1.0.6
+  VERSION: 1.0.7
   MINECRAFT_VERSION: 1.21.11
   NOTES: |
-    - Fixed invisible item frame textures
+    - Fixed estrogen
 
 jobs:
   zip-and-publish:

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "admin:item/invisible_glow_item_frame"
+    "layer0": "eiririn:item/estrogen"
   }
 }
