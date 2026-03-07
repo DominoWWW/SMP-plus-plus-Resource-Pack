@@ -1,0 +1,97 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/tab_logo_1.png",
+            "ascent": 12,
+            "height": 32,
+            "chars": [
+                "\uE500"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/tab_logo_2.png",
+            "ascent": 12,
+            "height": 32,
+            "chars": [
+                "\uE501"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/tab_logo_3.png",
+            "ascent": 12,
+            "height": 32,
+            "chars": [
+                "\uE502"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/tab_logo_4.png",
+            "ascent": 12,
+            "height": 32,
+            "chars": [
+                "\uE503"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/afk.png",
+            "ascent": 7,
+            "height": 7,
+            "chars": [
+                "\uE504"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:icons/discord.png",
+            "ascent": 7,
+            "height": 7,
+            "chars": [
+                "\uE505"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:emotes/domdom.png",
+            "ascent": 7,
+            "height": 7,
+            "chars": [
+                "\uE600"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:emotes/skull.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "💀"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:emotes/eyes.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": [
+                "👀"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "": -0.75
+            }
+        },
+        {
+            "type": "space",
+            "advances": {
+                "": -7
+            }
+        }
+    ]
+}
