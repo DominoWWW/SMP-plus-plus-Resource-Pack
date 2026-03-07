@@ -1,0 +1,28 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+            {
+                "when": "invisible_glow_item_frame",
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:has_component",
+                    "component": "minecraft:custom_model_data",
+                    "on_true": {
+                        "type": "minecraft:model",
+                        "model": "admin:item/invisible_glow_item_frame"
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "minecraft:item/glow_item_frame"
+                    }
+                }
+            }
+        ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/glow_item_frame"
+            }
+    }
+}
