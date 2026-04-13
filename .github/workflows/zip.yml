@@ -5,10 +5,10 @@ on:
       - main
 
 env:
-  VERSION: 1.0.10
+  VERSION: 1.0.11
   MINECRAFT_VERSION: 1.21.11
   NOTES: |
-    - Added a pack Plotworld++
+    - Added puppy_jax_dk's spire wall and corner models to the resource pack
 
 jobs:
   zip-and-publish:
