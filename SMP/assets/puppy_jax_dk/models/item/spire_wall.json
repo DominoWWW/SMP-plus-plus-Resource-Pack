@@ -2,8 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "andesite",
-		"particle": "#wall"
+		"3": "minecraft:block/andesite",
+		"particle": "minecraft:block/andesite"
 	},
 	"elements": [
 		{
