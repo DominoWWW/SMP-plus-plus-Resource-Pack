@@ -5,11 +5,10 @@ on:
       - main
 
 env:
-  VERSION: 1.2.0
+  VERSION: 1.2.1
   MINECRAFT_VERSION: 26.3
   NOTES: |
-    - updated to 1.2.0
-    - updated to Minecraft 26.3
+    - fixed wrong packversion
 
 jobs:
   zip-and-publish:
