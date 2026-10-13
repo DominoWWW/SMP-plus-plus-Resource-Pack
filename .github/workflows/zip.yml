@@ -5,10 +5,11 @@ on:
       - main
 
 env:
-  VERSION: 1.1.1
-  MINECRAFT_VERSION: 1.21.11
+  VERSION: 1.2.0
+  MINECRAFT_VERSION: 26.3
   NOTES: |
-    - added model for puppy_jax_dk spire corner and wall
+    - updated to 1.2.0
+    - updated to Minecraft 26.3
 
 jobs:
   zip-and-publish:
